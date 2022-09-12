@@ -1,0 +1,19 @@
+= docToolchain Demos
+
+all demos are organized in folders.
+Each folder has its own docToolchain instance.
+
+start a local webserver to see results:
+
+[source, bash]
+----
+python -m http.server 8000
+----
+
+== reveal.js: generateDeck
+
+create stunning presentations with docToolchain and reveal.js
+
+=> link:README.adoc[README]
+
+== exportExcel

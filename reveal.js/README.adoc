@@ -1,0 +1,21 @@
+
+= reveal.js Demo
+
+create stunning presentations with docToolchain and reveal.js
+
+take a look at link:slides.adoc[slides.adoc]
+
+build the slides with the command
+
+[source, bash]
+----
+./dtcw generateDeck
+----
+
+start a local webserver to see results:
+
+[source, bash]
+----
+python -m http.server 8000
+----
+

@@ -1,0 +1,44 @@
+:icons: font
+== get started
+
+//tag::intro[]
+This is a short tutorial or demo on how to install docToolchain and get your first results.
+//end::intro[]
+
+If you use VS Code (gitpod), then open this `README.adoc` and press `Ctrl+k` then `v` to activate the AsciiDoc preview.
+
+If you use a JetBrains IDE like IntelliJ, the preview will open automatically after you have installed the AsciiDoc plugin.
+(look for the yellow banner which tells you that there is a plugin for `.adoc` files.)
+
+To install _docToolchain_, switch to the terminal and run
+
+[code, bash]
+----
+curl -Lo dtcw doctoolchain.github.io/dtcw
+chmod +x dtcw
+./dtcw local tasks --group=doctoolchain
+----
+
+NOTE: whatch out for the question if you want to get a default config.
+
+Now, download the arc42-template and render it as HTML, PDF and Microsite
+
+[code, bash]
+----
+./dtcw downloadTemplate
+./dtcw generateHTML
+./dtcw generatePDF
+./dtcw generateSite
+----
+
+NOTE: the `downloadTemplate` will ask you some question about which language of the template and with or without help.
+
+To preview the files, start a small server from within the terminal:
+
+[code, bash]
+----
+python -m http.server 8000
+----
+
+Gitpod will now ask you what to do with the opened port. Just click on "open in browser" and navigate through the `build` folder.
+

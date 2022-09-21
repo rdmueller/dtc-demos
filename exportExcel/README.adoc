@@ -1,0 +1,24 @@
+== exportExcel
+
+// tag::intro[]
+This demo shows you how you can convert Excel sheets to AsciiDoc.
+// end::intro[]
+
+Run
+
+[code, bash]
+----
+./dtcw exportExcel
+----
+
+docToolchain will search for Excel files within the configured document root (`src/docs`) and convert all worksheets to AsciiDoc.
+
+It keeps all formattings which are supported by AsciiDoc:
+
+* background-color
+* vertical and horizontal alignment
+* column width
+* colspan and rowspan
+* formulars are evaluated at covertion time
+
+

@@ -1,9 +1,11 @@
 
 = reveal.js Demo
 
+// tag::intro[]
 create stunning presentations with docToolchain and reveal.js
+// end::intro[]
 
-take a look at link:slides.adoc[slides.adoc]
+take a look at link:src/docs/slides.adoc[slides.adoc]
 
 build the slides with the command
 

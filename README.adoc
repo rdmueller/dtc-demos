@@ -1,19 +1,32 @@
 = docToolchain Demos
 
-all demos are organized in folders.
+All demos are organized in folders.
 Each folder has its own docToolchain instance.
 
-start a local webserver to see results:
+The demos are optimized to be used with https://gitpod.io[gitpod].
+Just fork the repository and prepend `https://gitpod.io#` to the URL of your repository to get a webbased instance of VS Code.
+
+For each demo, it makes sense to start a local webserver to see results:
 
 [source, bash]
 ----
 python -m http.server 8000
 ----
 
+== get started
+
+include::getStarted/README.adoc[tags=intro]
+
+=> link:getStarted/README.adoc[README]
+
 == reveal.js: generateDeck
 
-create stunning presentations with docToolchain and reveal.js
+include::generateDeck/README.adoc[tags=intro]
 
-=> link:README.adoc[README]
+=> link:generateDeck/README.adoc[README]
 
 == exportExcel
+
+include::exportExcel/README.adoc[tags=intro]
+
+=> link:exportExcel/README.adoc[README]
